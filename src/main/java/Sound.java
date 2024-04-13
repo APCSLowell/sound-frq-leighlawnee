@@ -39,7 +39,7 @@ return count;
   public void trimSilenceFromBeginning()
   {
     int i = 0;
-    while this.samples[i] == 0){
+    while (this.samples[i] == 0){
       i++;
     }
     int [] trimmed = new int [this.samples.length-i];
