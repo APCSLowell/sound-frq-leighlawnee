@@ -21,7 +21,7 @@ public class Sound
          this.samples[i]=limit;
           count++;
         }else if(this.samples[i]<-limit){
-          this.samples[i]=-limitt;
+          this.samples[i]=-limit;
           count++;
         }
     }
@@ -38,10 +38,11 @@ return count;
    */
   public void trimSilenceFromBeginning()
   {
+    int i = 0;
     while this.samples[i] == 0){
       i++;
     }
-    int [] trimmed = new int [this,samples.length-i];
+    int [] trimmed = new int [this.samples.length-i];
     int k = 0;
     for(int j = i; j<this.samples.length; j++){
       trimmed[k] = this.samples[j];
